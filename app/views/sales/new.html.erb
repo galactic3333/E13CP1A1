@@ -1,0 +1,38 @@
+<h1>Nueva Venta</h1>
+
+<%= form_with model: @sale, local: true do |form| %>
+  <div class="">
+   <%= form.label :cod, "Código" %>
+   <%= form.number_field :cod, id: :sale_cod %>
+  </div>
+  <br>
+  <div class="">
+   <%= form.label :detail, "Detalle" %>
+   <%= form.text_area :detail, id: :sale_detail %>
+  </div>
+  <br>
+  <div class="">
+   <%= form.label :category, "Categoría" %>
+   <%= form.text_field :category, id: :sale_category %>
+  </div>
+  <br>
+  <div class="">
+   <%= form.label :value, "Valor" %>
+   <%= form.number_field :value, id: :sale_value %>
+  </div>
+  <br>
+  <div class="">
+   <%= form.label :discount, "Descuento" %>
+   <%= form.number_field :discount, id: :sale_discount %>
+  </div>
+  <br>
+  <div class="">
+   <%= form.label :exento_iva, "Exento de IVA" %>
+   <%= form.check_box :tax, id: :sale_tax %>
+  </div>
+  <br>
+  <div class="">
+   <%= form.submit "Crear" %>
+  </div>
+
+<% end %>

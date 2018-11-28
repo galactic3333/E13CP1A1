@@ -1,0 +1,13 @@
+<h1> "El registro fue almacenado con éxito!"</h1>
+<ul>
+  <li>Código: <%= @sale.cod %></li>
+  <li>Detalle: <%= @sale.detail %></li>
+  <li>Categoría: <%= @sale.category %></li>
+  <li>Valor: <%= @sale.value %></li>
+  <li>Descuento: <%= @sale.discount %></li>
+  <li>Impuesto: <%= @sale.tax %></li>
+  <li>Total: <%= @sale.total %></li>
+</ul>
+
+
+<%= link_to 'Volver', new_sale_path %>
